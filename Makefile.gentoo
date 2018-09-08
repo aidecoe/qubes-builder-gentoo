@@ -1,0 +1,49 @@
+# Makefile for Gentoo packages build
+#
+# For "API" documentation check Makefile.generic
+
+### Variables required as per Makefile.generic:
+#
+#   PACKAGE_LIST - list of packages to build. Targets 'build-dep', 'package' and 'copy-out'
+#     will be run for each word on the list, with PACKAGE set to current word
+#   DIST_BUILD_DIR - basedir for sources inside of chroot - relative to
+#     CHROOT_DIR (qubes-src will be created in this directory)
+#
+PACKAGE_LIST =
+DIST_BUILD_DIR =
+
+### Targets required by Makefile.generic to build packages:
+
+# dist-prepare-chroot - initial preparation of chroot environment
+#   Specifically, load mounts for the build chroot
+dist-prepare-chroot:
+	@true
+
+# dist-prep - some preparation of sources (if needed)
+dist-prep:
+	@true
+
+# dist-build-dep - install build dependencies (should operate on chroot directory)
+dist-build-dep:
+	@true
+
+# dist-package - compile package (should operate on chroot directory)
+dist-package:
+	@true
+
+# dist-copy-out - copy compiled package out of chroot env; this target should
+#     move packages to ORIG_SRC (distro-specific subdir) and hardlink them to
+#     BUILDER_REPO_DIR
+dist-copy-out:
+	@true
+
+### Additional targets
+
+# Copies requested packages (based on PACKAGE_SET, COMPONENT, DIST) to
+# requested repository (UPDATE_REPO)
+update-repo:
+	@true
+
+# Sign packages
+sign:
+	@true

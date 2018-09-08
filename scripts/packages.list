@@ -1,0 +1,25 @@
+app-admin/sudo
+app-editors/emacs
+app-editors/gvim
+app-editors/vim
+app-portage/genlop
+app-portage/gentoolkit
+app-portage/layman
+app-portage/portage-utils
+app-shells/bash-completion
+app-text/evince
+media-fonts/dejavu
+media-fonts/fira-code
+media-fonts/fira-sans
+net-misc/curl
+sys-apps/ethtool
+www-client/firefox-bin
+x11-base/xorg-x11
+x11-terms/gnome-terminal
+x11-terms/xterm
+
+# Premerge deps for Qubes
+app-emulation/xen-tools
+dev-libs/boost
+media-gfx/imagemagick
+sys-fs/lvm2

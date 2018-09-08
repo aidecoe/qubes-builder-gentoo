@@ -1,0 +1,3 @@
+qubes-vm/*				~amd64
+x11-drivers/xf86-input-mfndev		~amd64
+x11-drivers/xf86-video-dummy-qubes	~amd64
