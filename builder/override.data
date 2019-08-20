@@ -1,0 +1,14 @@
+[0xF59E1704]
+type        : gpg
+key         : AC6337A027243EFCCAD40C9AE420A389C19FB5B7
+owner       : Amadeusz Piotr Zolnowski <aidecoe@aidecoe.name>
+fingerprint : AC63 37A0 2724 3EFC CAD4  0C9A E420 A389 C19F B5B7
+verify      : fpr:::::::::AC6337A027243EFCCAD40C9AE420A389C19FB5B7:
+url         :
+
+[builder-gentoo]
+id          : builder-gentoo
+type        : builder
+description : Gentoo Builder - Contains all Makefiles to build Gentoo based templates
+require     : None
+require_in  : gentoo
