@@ -21,6 +21,10 @@ geni chroot exec -- useradd \
     --shell /bin/bash \
     user
 
+echo "  --> Creating /lib/modules..."
+geni chroot exec -- mkdir /lib/modules
+geni chroot exec -- touch /lib/modules/.keep
+
 echo "  --> Updating config files..."
 geni manage install-tree "$SCRIPTSDIR/config"
 
