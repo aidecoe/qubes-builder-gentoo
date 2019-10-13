@@ -31,7 +31,6 @@ geni manage install-tree "$SCRIPTSDIR/config"
 echo "  --> Getting Qubes VM ebuilds..."
 geni chroot exec -- layman -S
 geni chroot exec -- layman -a aidecoe
-geni chroot exec -- bash -c 'cd /var/lib/layman/aidecoe && git checkout qubes && git pull'
 
 echo "  --> Installing Qubes packages..."
 geni manage emerge qubes-vm/qubes-vm-meta
